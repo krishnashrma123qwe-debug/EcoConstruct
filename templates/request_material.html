@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Waste Material</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>🏗 Request Waste Material</h2>
+    <form method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Site Location</label>
+      <input type="text" name="site" required>
+
+      <label>Material Needed</label>
+      <select name="material" required>
+        <option>Bricks</option>
+        <option>Concrete</option>
+        <option>Metal</option>
+        <option>Mixed Waste</option>
+      </select>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

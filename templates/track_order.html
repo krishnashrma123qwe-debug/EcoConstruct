@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track My Order</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>📍 Track My Order</h2>
+    <p>Your vehicle is on the way. Estimated arrival: <b>20 minutes</b></p>
+    
+    <!-- Fake Map (Google Maps Embed API can be added later) -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609758395!2d72.74109950893891!3d19.082197839698917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a362a3b7d%3A0x8f8f0d6f6a14f0d3!2sMumbai!5e0!3m2!1sen!2sin!4v1616412012345!5m2!1sen!2sin"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
